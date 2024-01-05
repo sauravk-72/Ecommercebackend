@@ -123,7 +123,7 @@ exports.forgotpassword = async (req, res) => {
             //set token and logo valuein ejs
             const data = {
                 //userfind._id will returb the whole data of user as object but userfind.id only returns id
-                passwordresetlink:`http://localhost:3000/resetpassword/${userfind.id}/${setusertoken.verifytoken}`,
+                passwordresetlink:`https://shreecreationsbysk.netlify.app/${userfind.id}/${setusertoken.verifytoken}`,
                 logo:"https://cdn-icons-png.flaticon.com/128/732/732200.png"
             }
              // set dynamic datavalue in ejs
