@@ -6,7 +6,13 @@ const port=5000
 require("./db/conn")
 
 
-app.use(cors())
+app.use(cors(
+    {
+        origin:["https://ecommercebackend-gray-ten.vercel.app"],
+        methods:["POST","GET","DELETE","PUT"],
+        credentials:true
+    }
+))
 app.use(express.json());
 
 
